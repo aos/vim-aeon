@@ -97,6 +97,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi Conceal guifg=#8b8b8b guibg=NONE gui=NONE cterm=NONE
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Title guifg=#000000 guibg=NONE gui=bold cterm=bold
+
+  " LSP Diagnostics
+  hi! link DiagnosticHint LineNr
   unlet s:t_Co
   finish
 endif
